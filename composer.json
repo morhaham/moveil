@@ -1,0 +1,13 @@
+{
+    "require": {
+        "symfony/yaml": "^3.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "MoveIL\\Model\\": "model/",
+            "MoveIL\\Controller\\": "controller/"
+            }
+    }
+
+}
+

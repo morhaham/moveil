@@ -1,0 +1,7 @@
+Stop:
+  stopByName: SELECT stop_name FROM stops WHERE stop_name LIKE ?
+
+Route:
+  routeById: SELECT route_id FROM routes WHERE route_name = ?
+
+    
