@@ -1,6 +1,6 @@
 <?php
-//require_once '../vendor/autoload.php';
-namespace Transportation\Model;
+
+namespace MoveIL\Model;
 
 class Stop {
     private $stop_name;

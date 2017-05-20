@@ -1,5 +1,5 @@
 <?php
-namespace Transportation\Model;
+namespace MoveIL\Model;
 //require_once '../vendor/autoload.php';
 use Symfony\Component\Yaml\Yaml;
 use \PDO;
@@ -11,23 +11,23 @@ class Database {
     public static function connect($server_name, $username, $password, $database_name) {
         try {
             if(self::$connection == null) {
-                self::$connection = new PDO("mysql:host=$servername; dbname=$database_name; charset=utf8", $username, $password);
+                self::$connection = new PDO("mysql:host=$server_name; dbname=$database_name; charset=utf8", $username, $password);
                 self::$connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-                echo "Connected successfully";
+                return "Connected successfully";
             }
             else {
-			    echo "Already connected to a database.";
+			    return "Already connected to a database.";
 			}
         }
         catch(PDOException $e) {
-            echo "Connection failed: ".$e -> getMessage();
+            return "Connection failed: ".$e -> getMessage();
         }
     }
    
     public static function initQueriesRepository() {
         try {
             if(self::$queries == null) {
-                return self::$queries = Yaml::parse(file_get_contents('../data/queries.yaml'));
+                return self::$queries = Yaml::parse(file_get_contents('./data/queries.yaml'));
             }
             else echo "The repository is already initialized.";
         } 

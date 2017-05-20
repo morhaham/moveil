@@ -4,6 +4,7 @@
     },
     "autoload": {
         "psr-4": {
+			"MoveIL\\": "src/",
             "MoveIL\\Model\\": "model/",
             "MoveIL\\Controller\\": "controller/"
             }
