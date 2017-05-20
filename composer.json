@@ -1,6 +1,7 @@
 {
     "require": {
-        "symfony/yaml": "^3.2"
+        "symfony/yaml": "^3.2",
+        "filp/whoops": "^2.1"
     },
     "autoload": {
         "psr-4": {
@@ -11,4 +12,3 @@
     }
 
 }
-
