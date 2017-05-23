@@ -6,7 +6,7 @@ require __DIR__ . '/../src/Bootstrap.php';
 ?>
 
 
-<!DOCTYPE html>
+<!--<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -32,5 +32,5 @@ require __DIR__ . '/../src/Bootstrap.php';
     </main>
     
 </body>
-</html>
+</html>-->
 
